@@ -1,0 +1,121 @@
+/home/qhdev/p3pinot/electric/test_program/../src/model.py:35: UserWarning: nn.init.xavier_normal is now deprecated in favor of nn.init.xavier_normal_.
+  nn.init.xavier_normal(param)
+/home/qhdev/p3pinot/electric/test_program/../src/model.py:33: UserWarning: nn.init.constant is now deprecated in favor of nn.init.constant_.
+  nn.init.constant(param, 0.0)
+Traceback (most recent call last):
+  File "/home/qhdev/miniconda3/envs/electric/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/home/qhdev/miniconda3/envs/electric/lib/python3.10/asyncio/base_events.py", line 628, in run_until_complete
+    self.run_forever()
+  File "/home/qhdev/miniconda3/envs/electric/lib/python3.10/asyncio/base_events.py", line 595, in run_forever
+    self._run_once()
+  File "/home/qhdev/miniconda3/envs/electric/lib/python3.10/asyncio/base_events.py", line 1845, in _run_once
+    event_list = self._selector.select(timeout)
+  File "/home/qhdev/miniconda3/envs/electric/lib/python3.10/selectors.py", line 469, in select
+    fd_event_list = self._selector.poll(timeout, max_ev)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/qhdev/p3pinot/electric/test_program/main.py", line 97, in get_store_data
+    await asyncio.sleep(0.1)  # Adjust the sleep time as needed
+  File "/home/qhdev/miniconda3/envs/electric/lib/python3.10/asyncio/tasks.py", line 609, in sleep
+    return await future
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/qhdev/p3pinot/electric/test_program/main.py", line 159, in <module>
+    asyncio.run(main())
+  File "/home/qhdev/miniconda3/envs/electric/lib/python3.10/asyncio/runners.py", line 47, in run
+    _cancel_all_tasks(loop)
+  File "/home/qhdev/miniconda3/envs/electric/lib/python3.10/asyncio/runners.py", line 63, in _cancel_all_tasks
+    loop.run_until_complete(tasks.gather(*to_cancel, return_exceptions=True))
+  File "/home/qhdev/miniconda3/envs/electric/lib/python3.10/asyncio/base_events.py", line 628, in run_until_complete
+    self.run_forever()
+  File "/home/qhdev/miniconda3/envs/electric/lib/python3.10/asyncio/base_events.py", line 595, in run_forever
+    self._run_once()
+  File "/home/qhdev/miniconda3/envs/electric/lib/python3.10/asyncio/base_events.py", line 1881, in _run_once
+    handle._run()
+  File "/home/qhdev/miniconda3/envs/electric/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/qhdev/p3pinot/electric/test_program/main.py", line 94, in get_store_data
+    with concurrent.futures.ThreadPoolExecutor() as pool:
+  File "/home/qhdev/miniconda3/envs/electric/lib/python3.10/concurrent/futures/_base.py", line 636, in __exit__
+    self.shutdown(wait=True)
+  File "/home/qhdev/miniconda3/envs/electric/lib/python3.10/concurrent/futures/thread.py", line 229, in shutdown
+    t.join()
+  File "/home/qhdev/miniconda3/envs/electric/lib/python3.10/threading.py", line 1089, in join
+    self._wait_for_tstate_lock()
+  File "/home/qhdev/miniconda3/envs/electric/lib/python3.10/threading.py", line 1105, in _wait_for_tstate_lock
+    elif lock.acquire(block, timeout):
+KeyboardInterrupt
+Exception ignored in: <module 'threading' from '/home/qhdev/miniconda3/envs/electric/lib/python3.10/threading.py'>
+Traceback (most recent call last):
+  File "/home/qhdev/miniconda3/envs/electric/lib/python3.10/threading.py", line 1525, in _shutdown
+    atexit_call()
+  File "/home/qhdev/miniconda3/envs/electric/lib/python3.10/concurrent/futures/thread.py", line 31, in _python_exit
+    t.join()
+  File "/home/qhdev/miniconda3/envs/electric/lib/python3.10/threading.py", line 1089, in join
+    self._wait_for_tstate_lock()
+  File "/home/qhdev/miniconda3/envs/electric/lib/python3.10/threading.py", line 1105, in _wait_for_tstate_lock
+    elif lock.acquire(block, timeout):
+KeyboardInterrupt: 
+Task was destroyed but it is pending!
+task: <Task cancelling name='Task-4' coro=<process_data() running at /home/qhdev/p3pinot/electric/test_program/main.py:122> wait_for=<Future cancelled> cb=[gather.<locals>._done_callback() at /home/qhdev/miniconda3/envs/electric/lib/python3.10/asyncio/tasks.py:718, gather.<locals>._done_callback() at /home/qhdev/miniconda3/envs/electric/lib/python3.10/asyncio/tasks.py:718]>
+Task exception was never retrieved
+future: <Task finished name='Task-3' coro=<get_store_data() done, defined at /home/qhdev/p3pinot/electric/test_program/main.py:71> exception=KeyboardInterrupt()>
+Traceback (most recent call last):
+  File "/home/qhdev/miniconda3/envs/electric/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/home/qhdev/miniconda3/envs/electric/lib/python3.10/asyncio/base_events.py", line 628, in run_until_complete
+    self.run_forever()
+  File "/home/qhdev/miniconda3/envs/electric/lib/python3.10/asyncio/base_events.py", line 595, in run_forever
+    self._run_once()
+  File "/home/qhdev/miniconda3/envs/electric/lib/python3.10/asyncio/base_events.py", line 1845, in _run_once
+    event_list = self._selector.select(timeout)
+  File "/home/qhdev/miniconda3/envs/electric/lib/python3.10/selectors.py", line 469, in select
+    fd_event_list = self._selector.poll(timeout, max_ev)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/qhdev/p3pinot/electric/test_program/main.py", line 97, in get_store_data
+    await asyncio.sleep(0.1)  # Adjust the sleep time as needed
+  File "/home/qhdev/miniconda3/envs/electric/lib/python3.10/asyncio/tasks.py", line 609, in sleep
+    return await future
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/qhdev/p3pinot/electric/test_program/main.py", line 159, in <module>
+    asyncio.run(main())
+  File "/home/qhdev/miniconda3/envs/electric/lib/python3.10/asyncio/runners.py", line 47, in run
+    _cancel_all_tasks(loop)
+  File "/home/qhdev/miniconda3/envs/electric/lib/python3.10/asyncio/runners.py", line 63, in _cancel_all_tasks
+    loop.run_until_complete(tasks.gather(*to_cancel, return_exceptions=True))
+  File "/home/qhdev/miniconda3/envs/electric/lib/python3.10/asyncio/base_events.py", line 628, in run_until_complete
+    self.run_forever()
+  File "/home/qhdev/miniconda3/envs/electric/lib/python3.10/asyncio/base_events.py", line 595, in run_forever
+    self._run_once()
+  File "/home/qhdev/miniconda3/envs/electric/lib/python3.10/asyncio/base_events.py", line 1881, in _run_once
+    handle._run()
+  File "/home/qhdev/miniconda3/envs/electric/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/qhdev/p3pinot/electric/test_program/main.py", line 94, in get_store_data
+    with concurrent.futures.ThreadPoolExecutor() as pool:
+  File "/home/qhdev/miniconda3/envs/electric/lib/python3.10/concurrent/futures/_base.py", line 636, in __exit__
+    self.shutdown(wait=True)
+  File "/home/qhdev/miniconda3/envs/electric/lib/python3.10/concurrent/futures/thread.py", line 229, in shutdown
+    t.join()
+  File "/home/qhdev/miniconda3/envs/electric/lib/python3.10/threading.py", line 1089, in join
+    self._wait_for_tstate_lock()
+  File "/home/qhdev/miniconda3/envs/electric/lib/python3.10/threading.py", line 1105, in _wait_for_tstate_lock
+    elif lock.acquire(block, timeout):
+KeyboardInterrupt
+Task was destroyed but it is pending!
+task: <Task cancelling name='Task-2' coro=<async_get_auth_token() running at /home/qhdev/p3pinot/electric/test_program/main.py:37> wait_for=<Future cancelled> cb=[gather.<locals>._done_callback() at /home/qhdev/miniconda3/envs/electric/lib/python3.10/asyncio/tasks.py:718, gather.<locals>._done_callback() at /home/qhdev/miniconda3/envs/electric/lib/python3.10/asyncio/tasks.py:718]>

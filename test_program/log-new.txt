@@ -1,0 +1,9 @@
+get new token: U0dONDEyNTQwNjUwMDAwMSM5MmVkMDlhOS1jNTVjLWZjMTQtNjk4OS0zMTU5ODA1MWQ3ODMjMjAyNC0wMi0xOCAyMDoyMTowMy4yMTUxNDk0MDkgKzA4MDAgQ1NUIG09Kzc1MzA1MTIuNzU0MjM4MzIx
+{"resp":"ping","code":200,"msg":"成功","result":{"pong":"pong"}}
+{"resp":"sub_agent_event","actionid":"","code":200,"msg":"成功","result":{"uid":"1148dc2b-704f-4ec6-ba80-ff4fb8bf9b5e"}}
+{"actionid":"","resp":"sub_event","code":200,"msg":"成功","result":{"uid":"c4195071-4601-4793-893a-e582e9e9ae6d"}}
+{"actionid":"","resp":"sub_event","code":200,"msg":"成功","result":{"uid":"c0b9bc56-39a0-48c5-8ae9-6f9434f25668"}}
+{"actionid":"","resp":"sub_event","code":200,"msg":"成功","result":{"uid":"0e63bcb5-1bf8-4c14-834c-6726af3dd5b8"}}
+{"actionid":"","resp":"sub_event","code":200,"msg":"成功","result":{"uid":"504b1a9a-c09d-403e-b8bb-7238253a0e5c"}}
+{"actionid":"","resp":"sub_event","code":200,"msg":"成功","result":{"uid":"7456c511-857a-43f9-94fd-f2d06eaf78ba"}}
+{"actionid":"","resp":"sub_event","code":200,"msg":"成功","result":{"uid":"2b3a56f7-8f35-4366-b271-bd340532f5f5"}}
